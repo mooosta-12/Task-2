@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  string name;
+  int num1 , num2;
+  char oper;
+cout<< "enter your name : ";
+cin>> name ;
+cout<< "enter your first number : ";
+cin>> num1;
+cout<< "enter your first number : ";
+cin>>num2;
+cout << "hello" << name <<"enter your operation (* , / , + , -)"<<endl;
+cin>>oper;
+if (oper == '*')
+ {
+     cout <<"the result of multpli is "<<num1* num2<<endl;
+ } else if (oper == '+')
+ {
+     cout <<"the result of sum is "<<num1+ num2<<endl;
+ } else if (oper == '-')
+ {
+     cout <<"the result of multpli is "<<num1- num2<<endl;
+ } else if (oper == '/')
+   if (num2!=0){
+       cout <<"the result of devide" <<num1/num2;
+   }else cout << "error number2 must not equal 0 ";
+   else  cout << "invalid value \n" ;
+    return 0;
+}

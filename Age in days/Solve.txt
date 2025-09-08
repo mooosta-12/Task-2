@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int day ;
+    int year  =365 ;
+    int month  =30 ;
+    float days  =7 ;
+    cout <<"enter the number of days : ";
+    cin >> day ;
+    year = day / 365 ;
+    int R = day % 365 ; // المتبقي 
+    
+    month = R / 30 ;
+    days = R % 30 ;
+    
+    cout << year <<" year" <<endl ;
+        cout << month<< " month" <<endl ;
+    cout <<days << " days" <<endl ;
+
+    return 0;
+}
